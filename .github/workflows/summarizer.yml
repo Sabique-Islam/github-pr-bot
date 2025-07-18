@@ -27,6 +27,6 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          SUMMARY=$(python src/main.py)
-          echo "----- SUMMARY OUTPUT BELOW -----"
+          python main.py > summary.txt
+          SUMMARY=$(cat summary.txt)
           echo "$SUMMARY"

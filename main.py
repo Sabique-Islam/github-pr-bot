@@ -30,6 +30,8 @@ def post_comment(comment):
     requests.post(url, headers=headers, json={"body": comment})
 
 if __name__ == "__main__":
+    if not os.getenv("GEMINI_API_KEY"):
+        print("[DEBUG] GEMINI_API_KEY is not set.")
     pr_body, diff = get_pr_data()
     summary = generate_summary(pr_body, diff)
     post_comment(f"**PR Summary**\n\n{summary}")
