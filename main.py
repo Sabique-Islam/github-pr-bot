@@ -35,3 +35,4 @@ if __name__ == "__main__":
     pr_body, diff = get_pr_data()
     summary = generate_summary(pr_body, diff)
     post_comment(f"**PR Summary**\n\n{summary}")
+    print(summary)
