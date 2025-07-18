@@ -4,7 +4,7 @@ from summarizer import generate_summary
 
 GITHUB_API = "https://api.github.com"
 REPO = os.getenv("GITHUB_REPOSITORY")
-PR_NUMBER = os.getenv("GITHUB_REF").split("/")[-1]
+PR_NUMBER = os.getenv("PR_NUMBER")
 TOKEN = os.getenv("GITHUB_TOKEN")
 
 headers = {
