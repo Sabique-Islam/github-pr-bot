@@ -33,6 +33,6 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          python main.py > summary.txt
+          python ./src/main.py > summary.txt
           SUMMARY=$(cat summary.txt)
           echo "$SUMMARY"
