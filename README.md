@@ -38,3 +38,7 @@ A smart **GitHub Pull Request Summarizer** powered by **Gemini 2.5 Flash**. Auto
 4. **Done!** The bot will automatically trigger on new PRs and post summaries in the PR conversation.
 
 ---
+
+![IDK WHY I DID THIS](./data/pr-bot.png)
+
+---
